@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/css3_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/css3_black">
+            <g id="css3">
+                <rect id="Rectangle" x="0" y="0" width="64" height="64"></rect>
+                <path d="M4,0 L60,0 L54.908,57.5 L31.936,64 L9.096,57.5 L4,0 Z M49.572,11.768 L14.432,11.76 L15,18.752 L42,18.756 L41.32,26 L23.612,26 L24.248,32.864 L40.736,32.864 L39.76,42.256 L32,44.4 L24.12,42.244 L23.62,36.616 L16.66,36.616 L17.436,46.896 L32,51.436 L46.328,47.356 L49.572,11.768 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

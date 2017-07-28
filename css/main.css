@@ -1,52 +1,96 @@
+/*layout from here*/
+
+main {
+	display: block;
+	margin: auto;
+	max-width: 1140px;
+	position: relative;
+	width: 80%;
+}
+
+section {
+  margin: 2em 0;
+}
+section:last-of-type {
+  margin-bottom: 5em;
+}
+
+
+/*text + colors from here*/
+grad {
+	background: #f8f9fa;
+	background: -webkit-linear-gradient(bottom, #f8f9fa, #f1f3f5);
+	background: -o-linear-gradient(bottom, #f8f9fa, #f1f3f5);
+	background: -moz-linear-gradient(bottom, #f8f9fa, #f1f3f5);
+	background: linear-gradient(bottom, #f8f9fa, #f1f3f5);
+}
+
+body, html {
+	color: #212529;
+	font-family: "Open Sans", "Noto Sans", "Noto Sans CJK JP", sans-serif;
+	font-size: .95em;
+	font-weight: 100;
+	line-height: 2em;
+}
+
 body {
-	margin: 60px auto;
-	width: 70%;
+	margin: auto;
+	width: 75%;
 }
 
-nav ul,
-footer ul {
-	font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
-	font-weight: bold;
-	list-style: none;
-/*	padding: 0px;*/
-}
-
-nav ul li,
-footer ul li {
-	display: inline;
-	margin-right: 20px;
-}
-
-a {
-	color: #999;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
+h1,h2,h3,h4 {
+	display: block;
+	font-family: "Noto Serif", "Noto Serif CJK JP", serif;
+	font-size: 4em;
+	font-weight: 900;
+	line-height: 2em;
+	margin: 0;
+	text-align: center;
 }
 
 h1 {
-	font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
-	font-size: 3em;
+  font-size: 4em;
+}
+h2 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1em;
+  font-weight: bold;
 }
 
-p {
-	color: #333;
-	font-size: 1.5em;
-	line-height: 1.4em;
+/*links are here*/
+a:link {
+    color: #868e96;
+	font-weight: bolder;
+	text-decoration: none;
+}
+a:visited {
+    color: #868e96;
+	text-decoration: none;
+}
+a:hover {
+    color: #dee2e6;
+	text-decoration: none;
 }
 
+/*footer down here*/
 footer {
 	border-top: 1px solid #d5d5d5;
+	font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
 	font-size: .8em;
+	line-height: 2em;
+	padding: 1.2em;
+	text-align: center;
 }
 
-ul.posts {
-	font-size: 1.5em;
-	margin: 20px auto 40px;
-}
-
-ul.posts li {
-	list-style: none;
+.profilepic {
+	display: block;
+	margin: auto;
+	width: 100%;
 }
