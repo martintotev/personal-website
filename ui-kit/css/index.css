@@ -3,6 +3,14 @@
 	background-color: #3178AA;
 }
 
+a {
+	text-decoration: none;
+}
+a:link, a:visited {
+    color: #fff;
+	text-decoration: none;
+}
+
 #page {
 	background-color: #fff;
 	min-height: 1534px;
@@ -63,7 +71,8 @@
 	text-align: center;
 	font-size: 30px;
 	line-height: 51px;
-	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 	margin-top: 64px;
 	position: relative;
 	width: 80.52%;
@@ -79,7 +88,8 @@
 	text-align: left;
 	font-size: 20px;
 	line-height: 30px;
-	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-family: 'Noto Serif', serif;
+	font-weight: 100;
 	margin-top: 24px;
 	position: relative;
 	width: 80.52%;
@@ -141,7 +151,8 @@
 	color: #999999;
 	text-align: center;
 	line-height: 14px;
-	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
 	left: 94px;
 }
 
@@ -160,7 +171,8 @@
 	color: #999999;
 	text-align: center;
 	line-height: 14px;
-	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
 	left: 184px;
 }
 
@@ -182,11 +194,7 @@
 }
 
 .SSFirstButton,
-.SSPreviousButton,
-.SSNextButton,
-.SSLastButton,
-.SSSlideLink,
-.SSCloseButton {
+.SSLastButton{
 	cursor: pointer;
 }
 
@@ -242,7 +250,7 @@
 
 #u2261-4 {
 	z-index: 10;
-	width: 80px;
+	width: 82px;
 	min-height: 14px;
 	background-color: transparent;
 	letter-spacing: 1px;
@@ -250,22 +258,29 @@
 	text-align: center;
 	font-size: 12px;
 	line-height: 14px;
-	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-decoration: none;
 	position: relative;
-	margin-right: -10000px;
 	margin-top: 15px;
 	left: 26.07%;
 }
 
 #buttonu2260:hover #u2261-4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-decoration: none;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	min-height: 14px;
-	width: 80px;
-	margin: 15px -10000px 0px 0%;
+	width: 82px;
+	margin: 15px 0px 0%;
 }
 
 #buttonu2260:active #u2261-4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-decoration: none;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	min-height: 14px;
@@ -320,21 +335,26 @@
 	z-index: 3;
 	width: 380px;
 	min-height: 14px;
+	max-height: 90px;
 	background-color: transparent;
 	color: #F8F9FA;
 	text-align: center;
-	font-size: 10px;
-	line-height: 15px;
-	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 34px;
+	margin-top: 24px;
 	margin-left: 50%;
 	left: -190px;
 }
 
+#twitter, #mail{
+	font-weight: 700;
+	text-decoration: none;
+}
+
 #u645-bw {
-	z-index: 2;
 	min-height: 64px;
 	margin-top: 48px;
 }
