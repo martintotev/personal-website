@@ -5,7 +5,7 @@ main {
 	margin: auto;
 	max-width: 1140px;
 	position: relative;
-	width: 80%;
+	width: 90%;
 }
 
 section {
@@ -96,6 +96,9 @@ footer {
 }
 
 .ui-kit {
-	font-size: 6em
+	font-weight: 900;
+	font-size: 3em;
+	line-height: 130%;
+	text-align: center;
 }
 	
