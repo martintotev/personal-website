@@ -35,9 +35,6 @@ html {
 	font-size: .95em;
 	font-weight: 100;
 	line-height: 1.5em;
-}
-
-body {
 	margin: auto;
 	width: 95%;
 }
@@ -51,12 +48,12 @@ h4 {
 	font-size: 4em;
 	font-weight: 900;
 	line-height: 2em;
-	margin: 0;
+	margin: 0%;
 	text-align: center;
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 2em;
 }
 
 h2 {
@@ -72,6 +69,11 @@ h3 {
 h4 {
 	font-size: 1em;
 	font-weight: bold;
+}
+
+p {
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 /*links are here*/
@@ -110,8 +112,12 @@ footer {
 }
 
 .ui-kit {
-	font-weight: 900;
-	font-size: 3em;
-	line-height: 130%;
+	font-weight: 300;
+	font-size: 1.5em;
 	text-align: center;
+	margin: 0%;
+}
+
+.biography {
+	
 }
