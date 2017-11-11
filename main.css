@@ -1,22 +1,25 @@
 /*layout from here*/
 
 main {
+	background-color: #f7f7f7;	
 	display: block;
 	margin: auto;
 	max-width: 1140px;
 	position: relative;
-	width: 90%;
+	width: 95%;
 }
 
 section {
-  margin: 2em 0;
+	margin: 2em 0;
 }
+
 section:last-of-type {
-  margin-bottom: 5em;
+	margin-bottom: 5em;
 }
 
 
 /*text + colors from here*/
+
 grad {
 	background: #f8f9fa;
 	background: -webkit-linear-gradient(bottom, #f8f9fa, #f1f3f5);
@@ -25,20 +28,24 @@ grad {
 	background: linear-gradient(bottom, #f8f9fa, #f1f3f5);
 }
 
-body, html {
-	color: #212529;
+body,
+html {
+	background-color: #f4f4f4;
 	font-family: "Open Sans", "Noto Sans", "Noto Sans CJK JP", sans-serif;
 	font-size: .95em;
 	font-weight: 100;
-	line-height: 2em;
+	line-height: 1.5em;
 }
 
 body {
 	margin: auto;
-	width: 75%;
+	width: 95%;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
 	display: block;
 	font-family: "Noto Serif", "Noto Serif CJK JP", serif;
 	font-size: 4em;
@@ -49,37 +56,44 @@ h1,h2,h3,h4 {
 }
 
 h1 {
-  font-size: 4em;
+	font-size: 4em;
 }
+
 h2 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-  text-align: center;
+	font-size: 3em;
+	margin-bottom: 0.5em;
+	text-align: center;
 }
+
 h3 {
-  font-size: 1.5em;
+	font-size: 1.5em;
 }
+
 h4 {
-  font-size: 1em;
-  font-weight: bold;
+	font-size: 1em;
+	font-weight: bold;
 }
 
 /*links are here*/
+
 a:link {
-    color: #868e96;
+	color: #868e96;
 	font-weight: bolder;
 	text-decoration: none;
 }
+
 a:visited {
-    color: #868e96;
+	color: #868e96;
 	text-decoration: none;
 }
+
 a:hover {
-    color: #dee2e6;
+	color: #dee2e6;
 	text-decoration: none;
 }
 
 /*footer down here*/
+
 footer {
 	border-top: 1px solid #d5d5d5;
 	font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
@@ -101,4 +115,3 @@ footer {
 	line-height: 130%;
 	text-align: center;
 }
-	
