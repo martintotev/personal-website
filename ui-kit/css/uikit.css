@@ -1,4 +1,3 @@
-
 .index {
 	/*DON'T TOUCH THIS! breaks the page...*/
 	background-color: #3178AA;
@@ -15,8 +14,9 @@ a {
 	text-decoration: none;
 }
 
-a:link, a:visited {
-    color: #fff;
+a:link,
+a:visited {
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ a:link, a:visited {
 }
 
 #u857 {
-	
+
 	background-color: transparent;
 	left: -129px;
 	margin-left: 50%;
@@ -102,7 +102,7 @@ a:link, a:visited {
 
 .bottom_text {
 	margin: 2em;
-	
+
 }
 
 #bottom {
@@ -151,7 +151,7 @@ a:link, a:visited {
 	padding: 12px;
 	position: absolute;
 	text-align: center;
-/*	width: 70px;*/
+	/*	width: 70px;*/
 }
 
 #u3361-4 {
@@ -168,7 +168,7 @@ a:link, a:visited {
 	padding: 12px;
 	position: absolute;
 	text-align: center;
-/*	width: 70px;*/
+	/*	width: 70px;*/
 }
 
 #u3362-4:hover,
@@ -182,7 +182,7 @@ a:link, a:visited {
 }
 
 .SSFirstButton,
-.SSLastButton{
+.SSLastButton {
 	cursor: pointer;
 }
 
@@ -198,8 +198,8 @@ a:link, a:visited {
 	margin-left: 43%;
 	margin-top: 48px;
 	padding: 10px;
-/*	position: relative;*/
-/*	width: 165px;*/
+	/*	position: relative;*/
+	/*	width: 165px;*/
 }
 
 #buttonu2260:hover {
@@ -207,8 +207,8 @@ a:link, a:visited {
 	filter: alpha(opacity=80);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 	opacity: 0.8;
-	
-	
+
+
 }
 
 #buttonu2260:active {
@@ -285,7 +285,7 @@ a:link, a:visited {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-}	
+}
 
 .footer_text {
 	margin: auto;
@@ -300,13 +300,15 @@ a:link, a:visited {
 	padding: 1rem;
 }
 
-#twitter, #mail{
+#twitter,
+#mail {
 	color: #fff;
 	font-weight: 500;
 	text-decoration: none;
 }
 
-#medium, #behance {
+#medium,
+#behance {
 	color: #212529;
 	font-weight: 400;
 }
