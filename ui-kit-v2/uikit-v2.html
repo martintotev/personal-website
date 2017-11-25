@@ -2,24 +2,21 @@
 <html lang="en-GB">
 
 	<head>
-		<!-- Google Analytics-->
-		<script type="GoogleAnalyticsObject">
-			(function (i, s, o, g, r, a, m) {
-				i['GoogleAnalyticsObject'] = r;
-				i[r] = i[r] || function () {
-					(i[r].q = i[r].q || []).push(arguments)
-				},
-				i[r].l = 1 * new Date();
-				a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-				a.async = 1;
-				a.src = g;
-				m.parentNode.insertBefore(a, m)
-			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-103132767-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-			ga('create', 'UA-103132767-2', 'auto');
-			ga('send', 'pageview');
+			gtag('config', 'UA-103132767-2');
 		</script>
+
+		<!--Font Awesome Icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<link rel="shortcut icon" href="images/ui-kit-favicon.ico?crc=4148474895"/>
 		<title>Seoul Bike Free UI Kit</title>
 
@@ -39,9 +36,15 @@
 		<!-- link to google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 
 	</head>
 	<body class="body">
+		<a href="https://martintotev.github.io" target="blank">
+			<div id="top"></div>
+		</a>
+
 		<div id="seoul-bike-logo">
 			<img class="seoul-bike-logo" alt="Seoul Bike" src="images/eng_poster.png"/>
 		</div>
@@ -50,10 +53,13 @@
 			<img class="UIkit-sticker" alt="Free UI Kit" src="images/uikit_sticker.png"/>
 		</div>
 
-		<h1>English &amp; Korean language based UI Kit for Sketch. And it’s FREE!
+		<h1>English &amp; Korean language based UI Kit for Sketch.
+			<br/>And it’s FREE!
 		</h1>
 		<p id="intro">
-			A Google Material Design based UI Kit, with “icons”, “buttons” and “toast”. So much “toast” you could feed a country! Symbols within symbols within symbols for easy-to-use overrides.
+			A Google Material Design based UI Kit, with “icons”, “buttons” and “toast”.
+			<br/>So much “toast” you could feed a country!
+			<br/>Symbols within symbols within symbols for easy-to-use overrides.
 		</p>
 
 		<p id="more">
@@ -62,39 +68,49 @@
 			post and any feedback would be much appreciated!
 		</p>
 
-		<h2 id="outro">
-			This UI Kit is free for personal and commercial use. If you use this kit as part of your work, mentioning it is greatly appreciated.
-		</h2>
+		<hr class="divider">
 
-		<div class="css-slideshow">
-			<figure>
-				<img src="images/perspective-mock-eng.jpg" alt="english mock up" width="495" height="370" class="alignnone size-full wp-image-177"/>
-				<figcaption>
-					<strong>ENGLISH</strong>
-				</figcaption>
-			</figure>
-			<figure>
-				<img src="images/perspective-mock-kor.jpg" alt="korean mock up" width="495" height="370" class="alignnone size-large wp-image-176"/>
-				<figcaption>
-					<strong>KOREAN</strong>
-				</figcaption>
-			</figure>
+		<div class="preview-img">
+			<h6>Place mouse over the image to switch between English and Korean</h6>
+			<a class="foo">
+				<img alt="ENGLISH" src="images/perspective-mock-eng-txt.jpg"/>
+				<img alt="KOREAN" src="images/perspective-mock-kor-txt.jpg"/>
+			</a>
 		</div>
 
+		<div class="btn">
+			<a style="color: #f8f9fa;" href="https://goo.gl/7jAexZ" class="download-btn" target="blank">DOWNLOAD</a>
+		</div>
+
+		<hr class="divider">
+
 		<div id="extra">
-			<p id="copyright">
-				The UI design itself is copyrighted and please do not upload it on Dribble or Behance and claim it as your own… That would be really uncool.
-			</p>
+			<h2 id="copyright">
+				This UI Kit is free for personal and commercial use. If you use this kit as part of your work, mentioning it is greatly appreciated. The UI design itself is copyrighted and please do not upload it on Dribble or Behance and claim it as your own… That
+				would be really uncool.
+			</h2>
 		</div>
 
 		<h3 id="bye">Cheers and keep on creating!</h3>
 
 		<div class="footer">
-			<h5>© 2017 Martin Totev. All rights reserved.
-				<br>Find me on
-				<a id="twitter" href="https://www.twitter.com/martintotev89">Twitter</a>
-				or shoot me a
-				<a id="mail" href="mailto:martintotev89@gmail.com">mail</a>!</h5>
+			<div class="footer-contact-box">
+				<p id="footer-contact">
+					Find me on
+					<a id="twitter" href="https://www.twitter.com/martintotev89">
+						<i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+					</a>
+					or shoot me an
+					<a id="mail" href="mailto:martintotev89@gmail.com">
+						<i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+					</a>
+				</p>
+			</div>
+
+			<div class="footer-txt-box">
+				<p id="footer-txt">© 2017 Martin Totev. All rights reserved.</p>
+			</div>
+
 		</div>
 	</body>
 </html>
