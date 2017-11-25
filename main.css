@@ -1,12 +1,11 @@
 /*layout from here*/
-
 main {
-	background-color: #f7f7f7;	
-	display: block;
-	margin: auto;
-	max-width: 1140px;
-	position: relative;
-	width: 95%;
+	background-color: #f7f7f7;
+	display         : block;
+	margin          : auto;
+	max-width       : 1140px;
+	position        : relative;
+	width           : 95%;
 }
 
 section {
@@ -16,10 +15,7 @@ section {
 section:last-of-type {
 	margin-bottom: 5em;
 }
-
-
 /*text + colors from here*/
-
 grad {
 	background: #f8f9fa;
 	background: -webkit-linear-gradient(bottom, #f8f9fa, #f1f3f5);
@@ -31,25 +27,25 @@ grad {
 body,
 html {
 	background-color: #f4f4f4;
-	font-family: "Open Sans", "Noto Sans", "Noto Sans CJK JP", sans-serif;
-	font-size: .95em;
-	font-weight: 100;
-	line-height: 1.5em;
-	margin: auto;
-	width: 95%;
+	font-family     : "Open Sans", "Noto Sans", "Noto Sans CJK JP", sans-serif;
+	font-size       : 0.95em;
+	font-weight     : 100;
+	line-height     : 1.5em;
+	margin          : auto;
+	width           : 95%;
 }
 
 h1,
 h2,
 h3,
 h4 {
-	display: block;
+	display    : block;
 	font-family: "Noto Serif", "Noto Serif CJK JP", serif;
-	font-size: 4em;
+	font-size  : 4em;
 	font-weight: 900;
 	line-height: 2em;
-	margin: 0%;
-	text-align: center;
+	margin     : 0;
+	text-align : center;
 }
 
 h1 {
@@ -57,9 +53,9 @@ h1 {
 }
 
 h2 {
-	font-size: 3em;
+	font-size    : 3em;
 	margin-bottom: 0.5em;
-	text-align: center;
+	text-align   : center;
 }
 
 h3 {
@@ -67,57 +63,51 @@ h3 {
 }
 
 h4 {
-	font-size: 1em;
+	font-size  : 1em;
 	font-weight: bold;
 }
 
 p {
-	margin-left: 5%;
+	margin-left : 5%;
 	margin-right: 5%;
 }
-
 /*links are here*/
-
 a:link {
-	color: #868e96;
-	font-weight: bolder;
+	color          : #868e96;
+	font-weight    : bolder;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #868e96;
+	color          : #868e96;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #dee2e6;
+	color          : #dee2e6;
 	text-decoration: none;
 }
-
 /*footer down here*/
-
-footer {
-	border-top: 1px solid #d5d5d5;
+.footer {
+	border-top : 1px solid #d5d5d5;
 	font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
-	font-size: .8em;
+	font-size  : 0.8em;
 	line-height: 2em;
-	padding: 1.2em;
-	text-align: center;
+	padding    : 1.2em;
+	text-align : center;
 }
 
 .profilepic {
 	display: block;
-	margin: auto;
-	width: 100%;
+	margin : auto;
+	width  : 100%;
 }
 
 .ui-kit {
 	font-weight: 300;
-	font-size: 1.5em;
-	text-align: center;
-	margin: 0%;
+	font-size  : 1.5em;
+	text-align : center;
+	margin     : 0;
 }
 
-.biography {
-	
-}
+.biography {}
