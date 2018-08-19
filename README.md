@@ -3,7 +3,7 @@ My personal website/portfolio
 
 # [Start Bootstrap - Stylish Portfolio](https://startbootstrap.com/template-overviews/stylish-portfolio/)
 
-Cheers to Sart Bootstrap for the [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/).
+Cheers to Start Bootstrap for the [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/).
 
 ## Copyright and License
 
