@@ -16,7 +16,8 @@ body {
 }
 
 .btn-xl {
-    padding: 1.25rem 2.5rem
+    padding: 1.25rem 2.5rem;
+    margin: 1.25rem;
 }
 
 .content-section {
@@ -43,7 +44,7 @@ h6 {
 }
 
 .text-faded {
-    color: rgba(255, 255, 255, .7)
+    color: rgba(255, 255, 255, 0.836)
 }
 
 .map {
@@ -128,7 +129,7 @@ h6 {
     -o-transition: all .4s ease 0s;
     transition: all .4s ease 0s;
     transform: translateX(250px);
-    background: #1d809f;
+    background: #212529;
     border-left: 1px solid rgba(255, 255, 255, .1)
 }
 
@@ -151,7 +152,7 @@ h6 {
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255, 255, 255, .2)
+    background: #495057;
 }
 
 .sidebar-nav li a:active,
@@ -196,7 +197,7 @@ h6 {
     height: 50px;
     text-align: center;
     color: #fff;
-    background: rgba(52, 58, 64, .5);
+    background: #212529;
     line-height: 50px;
     z-index: 999
 }
@@ -207,12 +208,12 @@ h6 {
 }
 
 .menu-toggle:hover {
-    background: #343a40
+    background: #495057
 }
 
 .service-icon {
     background-color: #f8f9fa;
-    color: #868e96;
+    color: #212529;
     height: 6rem;
     width: 6rem;
     display: block;
@@ -234,6 +235,15 @@ h6 {
     font-weight: 700;
     display: block;
     max-width: 30rem
+}
+
+#callout-title {
+    margin-bottom: .5rem !important;
+    margin-top: 10rem;
+}
+
+#callout-subtitle {
+    margin-bottom: 1rem !important;
 }
 
 .portfolio-item {
@@ -313,13 +323,13 @@ footer.footer .social-link {
     width: 4rem;
     line-height: 4.3rem;
     font-size: 1.5rem;
-    background-color: #1d809f;
+    background-color: #ced4da;
     transition: background-color .15s ease-in-out;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1)
 }
 
 footer.footer .social-link:hover {
-    background-color: #155d74;
+    background-color: #495057;
     text-decoration: none
 }
 
@@ -382,12 +392,22 @@ a:hover {
     font-weight: 700
 }
 
+.btn-invisible{
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem !important;
+    
+}
+
 #btn-skills {
-    margin-top: 2em;
+    border-color: #fff;
+    border: 1px;
+    /* margin-top: 2em; */
+    padding: 2rem;
 }
 
 .bg-primary {
-    background-color: #495057 !important
+    background-color: #212529 !important
 }
 
 .text-primary {
@@ -400,4 +420,10 @@ a:hover {
 
 #case-study {
     margin-top: 2em;
+}
+
+#about {
+    margin-bottom: 10rem;
+    /* margin-top: 10rem; */
+    padding-top: 14rem;
 }

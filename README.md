@@ -1,5 +1,7 @@
 # martintotev.github.io
-My personal website/portfolio
+My portfolio
+
+Based on the Stylish Portfolio by Start Bootstrap, and personally modified by me. This portfolio will be my learning/experimenting with HTML/CSS/JS thus being in a constant state of "Under Construction".
 
 # [Start Bootstrap - Stylish Portfolio](https://startbootstrap.com/template-overviews/stylish-portfolio/)
 
