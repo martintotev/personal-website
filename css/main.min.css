@@ -260,6 +260,43 @@ h6 {
     margin-bottom: 1rem !important;
 }
 
+.blog {
+    padding: 1rem 0;
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(../img/);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 40rem;
+    /* width: 100%; */
+}
+
+.blog h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+    max-width: 30rem
+}
+
+.blog-container {
+    width: 100%;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#blog-title {
+    margin-bottom: .5rem !important;
+    margin-top: 10rem;
+}
+
+#blog-subtitle {
+    text-align: left !important;
+    margin-bottom: 1rem !important;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
 .portfolio-item {
     display: block;
     position: relative;
@@ -359,8 +396,8 @@ a:hover {
 }
 
 .btn-primary {
-    background-color :#f8f9fa !important;
-    border-color :#495057 !important;
+    background-color: #f8f9fa !important;
+    border-color: #495057 !important;
     color: #495057 !important
 }
 
@@ -407,11 +444,10 @@ a:hover {
     font-weight: 700
 }
 
-.btn-invisible{
+.btn-invisible {
     font-weight: 700;
     font-size: 2rem;
     padding: 1rem !important;
-    
 }
 
 #btn-skills {
