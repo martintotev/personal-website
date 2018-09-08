@@ -1,0 +1,241 @@
+html {
+  background-attachment: scroll;
+  background-image     : linear-gradient(0deg, #7489a5, #8ba8cf 100%);
+  background-position  : center top;
+  background-repeat    : no-repeat;
+  /*height               : 100%;*/
+}
+
+body {
+  background    : #fff;
+  border-top    : 1px black;
+  box-shadow    : 1px 1px 10px rgba(0, 0, 0, 0.26);
+  color         : #212529;
+  font-family   : "Open Sans", sans-serif;
+  font-weight   : 300;
+  font-size     : 18px;
+  line-height   : 130%;
+  margin        : auto;
+  max-width     : 970px;
+  padding       : 6em;
+  min-height    : 100%;
+  height        : 100%;
+  position      : relative;
+  padding-bottom: 100px;
+}
+
+h1 {
+  color         : #212529;
+  font-family   : "Barlow Condensed", sans-serif;
+  font-size     : 40px;
+  font-weight   : 700;
+  font-kerning  : normal;
+  letter-spacing: -1px;
+  line-height   : 1.5;
+  margin        : 1em auto;
+  text-align    : center;
+}
+
+#intro {
+  color       : #212529;
+  font-family : "Open Sans", sans-serif;
+  font-size   : 1.2em;
+  font-weight : 100;
+  font-kerning: normal;
+  line-height : 1.5;
+  margin      : 0 auto;
+  text-align  : left;
+}
+
+#more {
+  color       : #212529;
+  font-family : "Open Sans", sans-serif;
+  font-size   : 1.2em;
+  font-weight : 100;
+  font-kerning: normal;
+  line-height : 1.5;
+  margin      : auto;
+  text-align  : left;
+}
+
+h6 {
+  color       : #212529;
+  font-family : "Open Sans", sans-serif;
+  font-weight : 100;
+  font-kerning: normal;
+  line-height : 1.5;
+  margin      : auto;
+  text-align  : center;
+}
+
+h2 {
+  color       : #212529;
+  font-family : "Open Sans", sans-serif;
+  font-size   : 1.1em;
+  font-weight : 100;
+  font-kerning: normal;
+  /*letter-spacing: -1px;*/
+  line-height : 1.5;
+  text-align  : left;
+}
+
+h3 {
+  margin-top   : 2em;
+  margin-bottom: 4em;
+  text-align   : center;
+}
+
+#extra {
+  color       : #212529;
+  font-family : "Open Sans", sans-serif;
+  font-size   : 1.1em;
+  font-weight : 500;
+  font-kerning: normal;
+  /*letter-spacing: -1px;*/
+  line-height : 1.5;
+  margin      : 1em auto;
+  text-align  : center;
+}
+/* Footer from here */
+.footer {
+  /*color      : #F8F9FA;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size  : 15px;
+  line-height: 200%;*/
+  position  : absolute;
+  left      : 0;
+  right     : 0;
+  bottom    : 0;
+  height    : 8em;
+  background: #869BB5;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.footer-contact-box {
+  margin: 2em auto;
+}
+
+#footer-contact {
+  color      : #F8F9FA;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size  : 24px;
+  /*padding: inherit;*/
+}
+
+.footer-txt-box {
+  position: absolute;
+  left    : 0;
+  right   : 0;
+  bottom  : 0;
+}
+
+#footer-txt {
+  color      : #F8F9FA;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size  : 0.74em;
+}
+
+#twitter {
+  font-size: 1.2em;
+}
+
+#mail {
+  font-size: 1.1em;
+}
+/* CSS for Images and Buttons from here */
+.divider {
+  border-top  : 1px;
+  border-color: #e9ecef;
+  margin      : 1.5em 5%;
+}
+
+.seoul-bike-logo {
+  display     : block;
+  margin-left : auto;
+  margin-right: auto;
+}
+
+.UIkit-sticker {
+  display: block;
+  margin : -3em auto 4em;
+}
+
+.btn {
+  text-align: center;
+  margin    : 2em;
+}
+
+.download-btn {
+  box-shadow      : 0 4px 8px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ce3253;
+  border-radius   : 8px;
+  display         : inline-block;
+  color           : #f8f9fa;
+  font-family     : Barlow Condensed, sans-serif;
+  font-size       : 28px;
+  font-weight     : 800;
+  padding         : 20px;
+  text-decoration : none;
+}
+
+.download-btn:hover {
+  box-shadow      : 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+  background-color: #de3a5c;
+}
+
+.download-btn:active {
+  position: relative;
+  top     : 1px;
+}
+
+img {
+  max-width: 100%;
+  height   : auto;
+  margin   : 1em auto 0;
+}
+/* CSS Show on Hover */
+/* cheers to http://jsfiddle.net/gd8ba/light/ */
+.foo img:last-child {
+  display: none;
+}
+
+.foo:hover img:first-child {
+  display: none;
+}
+
+.foo:hover img:last-child {
+  display: inline-block;
+}
+/* Other CSS */
+#top {
+  background: #ce3253;
+  position  : fixed;
+  left      : 0;
+  right     : 0;
+  height    : 10px;
+  top       : 0;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight    : 600;
+  color          : inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color          : #868e96;
+  font-style     : italic;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}

@@ -107,6 +107,7 @@ h6 {
     .masthead {
         height: 100vh
     }
+
     .masthead h1 {
         font-size: 4.5rem
     }
@@ -260,6 +261,43 @@ h6 {
     margin-bottom: 1rem !important;
 }
 
+.blog {
+    padding: 1rem 0;
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(../img/);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 40rem;
+    /* width: 100%; */
+}
+
+.blog h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+    max-width: 30rem
+}
+
+.blog-container {
+    width: 100%;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#blog-title {
+    margin-bottom: .5rem !important;
+    margin-top: 10rem;
+}
+
+#blog-subtitle {
+    text-align: left !important;
+    margin-bottom: 1rem !important;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
 .portfolio-item {
     display: block;
     position: relative;
@@ -299,26 +337,31 @@ h6 {
         max-width: none;
         margin: 0
     }
+
     .portfolio-item .caption {
         -webkit-transition: -webkit-clip-path .25s ease-out, background-color .7s;
         -webkit-clip-path: inset(0);
         clip-path: inset(0)
     }
+
     .portfolio-item .caption .caption-content {
         transition: opacity .25s;
         margin-left: 5rem;
         margin-right: 5rem;
-        margin-bottom: 5rem
+        margin-bottom: 5rem;
     }
+
     .portfolio-item img {
         -webkit-transition: -webkit-clip-path .25s ease-out;
         -webkit-clip-path: inset(-1px);
         clip-path: inset(-1px)
     }
+
     .portfolio-item:hover img {
         -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem)
     }
+
     .portfolio-item:hover .caption {
         background-color: rgba(29, 128, 159, .9);
         -webkit-clip-path: inset(2rem);
@@ -359,8 +402,8 @@ a:hover {
 }
 
 .btn-primary {
-    background-color :#f8f9fa !important;
-    border-color :#495057 !important;
+    background-color: #f8f9fa !important;
+    border-color: #495057 !important;
     color: #495057 !important
 }
 
@@ -398,6 +441,20 @@ a:hover {
     color: #fff !important;
 }
 
+.btn-action {
+    background-color: #fa5252 !important;
+    border-color: #fa5252 !important;
+    color: #fff !important;
+}
+
+.btn-action:active,
+.btn-action:focus,
+.btn-action:hover {
+    background-color: #ff8787 !important;
+    border-color: #fa5252 !important;
+    color: #fff !important;
+}
+
 .btn-dark {
     color: #fff !important
 }
@@ -407,11 +464,10 @@ a:hover {
     font-weight: 700
 }
 
-.btn-invisible{
+.btn-invisible {
     font-weight: 700;
     font-size: 2rem;
     padding: 1rem !important;
-    
 }
 
 #btn-skills {
@@ -441,4 +497,13 @@ a:hover {
     margin-bottom: 10rem;
     /* margin-top: 10rem; */
     padding-top: 14rem;
+}
+
+#youtube {
+    padding: 2rem 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%),
+        url(../img/youtube.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
 }
