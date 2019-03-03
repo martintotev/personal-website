@@ -9,18 +9,23 @@ body {
     font-family: 'Source Sans Pro'
 }
 
+.body-kr {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 .btn-xl {
     padding: 1.25rem 2.5rem;
     margin: 1.25rem;
 }
 
 .content-section {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem
 }
 
 .content-section-heading h2 {
-    font-size: 3rem
+    font-size: 3rem;
+    padding-bottom: 4.5rem;
 }
 
 .content-section-heading h3 {
@@ -34,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700
+    font-weight: 800
 }
 
 .text-faded {
@@ -339,7 +344,7 @@ h6 {
     }
 
     .portfolio-item .caption {
-        -webkit-transition: -webkit-clip-path .25s ease-out, background-color .7s;
+        -webkit-transition: -webkit-clip-path .15s ease-out, background-color .2s;
         -webkit-clip-path: inset(0);
         clip-path: inset(0)
     }
@@ -352,7 +357,7 @@ h6 {
     }
 
     .portfolio-item img {
-        -webkit-transition: -webkit-clip-path .25s ease-out;
+        -webkit-transition: -webkit-clip-path .15s ease-out;
         -webkit-clip-path: inset(-1px);
         clip-path: inset(-1px)
     }
@@ -363,7 +368,7 @@ h6 {
     }
 
     .portfolio-item:hover .caption {
-        background-color: rgba(29, 128, 159, .9);
+        background-color: rgba(255, 109, 109, 0.685);
         -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem)
     }
