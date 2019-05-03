@@ -40,6 +40,16 @@
     }
   });
 
+  // Lang button appear
+  // $(document).scroll(function() {
+  //   var scrollDistance = $(this).scrollTop();
+  //   if (scrollDistance < 100) {
+  //     $('.menu-lang').fadeIn();
+  //   } else {
+  //     $('.menu-lang').fadeOut();
+  //   }
+  // });
+
 })(jQuery); // End of use strict
 
 // Disable Google Maps scrolling
