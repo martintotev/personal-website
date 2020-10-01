@@ -11,7 +11,7 @@ if (hourNow > 18) {
 } else if (hourNow > 5) {
     greet = 'Good morning';
 } else {
-    greet = 'Good day';
+    greet = 'Good *insert time of day here*';
 }
 
 $(document).ready(function () {

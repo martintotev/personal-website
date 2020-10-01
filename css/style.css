@@ -125,6 +125,29 @@ section:last-of-type {
     margin-bottom: 0em;
 }
 
+.btn {
+    padding: 1.2em;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    cursor: pointer;
+    color: #000000;
+    margin: auto !important;
+    font-family: 'Ubuntu', monospace;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    font-size: 1em;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    color: var(--border-colour);
+    background-color: var(--text-colour);
+    border-color: var(--border-colour);
+  }
+  
+
 .title {
      /* grid container */
      margin-bottom: 1.5em;
@@ -314,6 +337,36 @@ section:last-of-type {
     margin: 0 0 1em 0;
     width: 100%;
     /* max-width: 650px; */
+}
+
+/* UI Kit */
+
+#uikit {
+    position: relative;
+    display: inline-grid;
+    align-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "title"
+        "description"
+        "uikit-btn";
+    z-index: 18;
+}
+
+#uikit .title {
+    grid-area: title;
+}
+
+#uikit #description {
+    grid-area: description;
+}
+
+#uikit #uikit-btn {
+    grid-area: uikit-btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* footer */
