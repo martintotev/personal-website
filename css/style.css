@@ -354,6 +354,23 @@ section:last-of-type {
     z-index: 18;
 }
 
+
+#blog .title {
+    grid-area: title;
+}
+
+#blog #description {
+    grid-area: description;
+}
+
+#blog #blog-btn {
+    grid-area: uikit-btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #uikit .title {
     grid-area: title;
 }
