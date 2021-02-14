@@ -126,7 +126,7 @@ section:last-of-type {
 }
 
 .btn {
-    padding: 1.2em;
+    padding: 0.5em;
     background-color: #ffffff;
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
     border-width: 1px;
@@ -179,7 +179,7 @@ section:last-of-type {
         "name name name name name"
         "... ... tag tag tag"
         "... ... bio bio bio"
-        "... ... email email email";
+        "... ... email email my-cv";
 }
 
 #introduction .name {
@@ -213,6 +213,19 @@ section:last-of-type {
 #introduction .email {
     grid-area: email;
     margin: 0;
+}
+
+#introduction .my-cv {
+    grid-area: my-cv;
+}
+
+#introduction #cv-btn {
+    grid-area: my-cv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4 / 5;
+    grid-row: 5 / 7;
 }
 
 
@@ -455,7 +468,8 @@ section:last-of-type {
         grid-template-areas:
             "... ... ... tagline tagline"
             "... ... name name name"
-            "... ... ... bio bio";
+            "... ... ... bio bio"
+            "... ... ... my-cv";
     }
 
     #intro .portrait {
@@ -515,7 +529,8 @@ section:last-of-type {
             "name"
             "tag"
             "bio"
-            "email";
+            "email"
+            "my-cv";
     }
 
     #introduction .name {
