@@ -45,7 +45,7 @@
     <meta name="msapplication-TileImage" content="assets/icons/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
  
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -64,9 +64,9 @@
    
 
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/hello-there.js" type="text/javascript"></script>
-    <script src="js/lang-localise.js" type="text/javascript"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/hello-there.js" type="text/javascript"></script>
+    <script src="./js/lang-localise.js" type="text/javascript"></script>
 
     <!-- Font Awesome code here -->
     <script src="https://kit.fontawesome.com/34e5ccf269.js" crossorigin="anonymous"></script>
@@ -77,9 +77,9 @@
         <section id="introduction">
             <h1 class="name">Martin Totev</h1>
             <div class="portrait"><img src="" alt=""></div>
-            <p class="tag"><span id="greet">Hello!</span> and <span id="langLocal">hi!</span> 👋<br> I am an UX designer and web developer but not yet a full unicorn 🦄.</p> <!-- greet and langLocal is localized to show greetings per browser's current time and default language -->
+            <p class="tag"><span id="greet">Hello!</span> and <span id="langLocal">hi!</span> 👋<br> I am a UX designer and web developer but not yet a full unicorn 🦄.</p> <!-- greet and langLocal is localized to show greetings per browser's current time and default language -->
             <div class="bio">
-                <p>Currently based in Seoul, South Korea I work at <a href="https://www.autocrypt.io">AUTOCRYPT</a> creating connections with partners, looking for creative ways to expand the business and help in the design of new products, for a more secure mobility.</p>
+                <p>Currently living in Seoul, South Korea I work at <a href="https://www.autocrypt.io">AUTOCRYPT</a> creating connections with partners, looking for creative ways to expand the business and help in the design of new products, for a more secure mobility.</p>
             </div>
             <div class="email">
                 <p>My mailbox is always open: <a href="mailto: hi@martintotev.com?subject=Hi Martin!" target="_blank">hi@martintotev.com</a> 📭 </p>
@@ -101,6 +101,11 @@
             <div id="codeand">
                 <p>Before that I designed the services, attractions and customer experience of an ecology themed park and resort <s>stuck in what is known in the media industry as "<a href="https://en.wikipedia.org/wiki/Development_hell">development hell</a>" but after a number of hurdles along the way,</s> <a href="http://kko.to/O56KaXgDH">now under construction</a> and set to open in 2023.</p>
             </div>
+            
+                <form id="portfolio-btn" action="./portfolio/portfolio.html">
+                    <input class="btn" type="submit" value="My Portfolio" />
+                </form>
+            
         </section>
         
         <section id="explore">
@@ -185,7 +190,6 @@
             <form id="uikit-btn" action="./ui-kit/uikit.html">
                 <input class="btn" type="submit" value="Free Sketch UI Kit" />
             </form>
-
         </section>
 
         <footer id="footer">

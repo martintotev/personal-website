@@ -174,41 +174,23 @@ section:last-of-type {
     pointer-events: auto;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 60px 142px 100px auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas:
-        "name name name name name"
-        "... ... tag tag tag"
-        "... ... bio bio bio"
-        "... ... email email my-cv";
+        "name name name"
+        "tag tag tag"
+        "email email my-cv";
 }
 
 #introduction .name {
     grid-area: name;
-}
-
-#introduction .portrait {
-    display: block;
-    background-image: url(../assets/img/Profile-square-280.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 1;
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-    width: 280px;
-    height: 280px;
-    z-index: -1;
+    padding-bottom: 0.4em;
 }
 
 #introduction .tag {
     grid-area: tag;
     margin: 0;
     align-self: end;
-}
-
-#introduction .bio {
-    grid-area: bio;
-    margin: 0;
 }
 
 #introduction .email {
@@ -224,169 +206,8 @@ section:last-of-type {
     grid-area: my-cv;
     display: flex;
     align-items: center;
-    grid-column: 4 / 5;
-    grid-row: 5 / 7;
 }
 
-
-
-/* Work section */
-
-#work {
-    position: relative;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: 49% 2% 49%;
-    grid-template-rows: auto auto 20%;
-    grid-template-areas:
-        "title title title"
-        "penta ... codeand"
-        "... portfolio-btn ...";
-    z-index: 15;
-}
-
-#work #penta {
-    grid-area: penta;
-}
-
-#work #codeand {
-    grid-area: codeand;
-}
-
-#work #portfolio-btn {
-    grid-area: portfolio-btn;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-/*
-.work-list {
-    grid-area: work-list;
-    display: block;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    column-count: 2;
-    column-gap: 1.5em;
-    z-index: 10;
-}
-
-.work-list p {
-    position: relative;
-    padding: 10px 14px;
-    margin: 0;
-}
-*/
-
-
-
-/* Improve and Explore section */
-
-#explore {
-    position: relative;
-    display: grid;
-    align-content: center;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "title title"
-        "list01 list02";
-    z-index: 15;
-}
-
-#explore-list ul {
-    list-style-type: circle;
-}
-
-#explore-list #list01 {
-    grid-area: list01;
-}
-
-#explore-list #list02 {
-    grid-area: list02;
-}
-
-
-
-/* Connect with me */
-
-#connect {
-    position: relative;
-    display: grid;
-    align-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "title"
-        "connect-list";
-    z-index: 18;
-}
-
-/* #connect .social-component {
-
-} */
-
-#connect .connect-list {
-    position: relative;
-    display: grid;
-    align-content: center;
-    grid-template-columns: auto;
-    grid-template-areas:
-    "github"
-    "twitter"
-    "instagram"
-    "twitch";
-}
-
-#connect .social-component h5 {
-    margin-top: 0;
-}
-
-#connect .social-component {
-    margin-bottom: 2em !important;
-}
-
-/* posts */
-
-.post {
-    position: relative;
-    display: block;
-    margin: 0 0 1em 0;
-    width: 100%;
-    /* max-width: 650px; */
-}
-
-/* UI Kit */
-
-#uikit {
-    position: relative;
-    display: inline-grid;
-    align-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-        "title"
-        "description"
-        "uikit-btn";
-    z-index: 18;
-}
-
-#uikit .title {
-    grid-area: title;
-}
-
-#uikit #description {
-    grid-area: description;
-}
-
-#uikit #uikit-btn {
-    grid-area: uikit-btn;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* footer */
 
@@ -397,7 +218,7 @@ section:last-of-type {
     grid-template-rows: auto auto;
     grid-template-areas:
     "copyright top"
-    "text ...";
+    "text home";
     z-index: 100;
     margin: 3em 0 5em 0;
 }
@@ -415,6 +236,11 @@ section:last-of-type {
 
 #footer #copyright {
     grid-area: copyright;
+}
+
+#footer #button-home {
+    grid-area: home;
+    text-align: right;
 }
 
 #footer #button-top {
