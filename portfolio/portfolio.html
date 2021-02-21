@@ -73,24 +73,39 @@
             <div class="email">
                 <p>My email: <a href="mailto: hi@martintotev.com?subject=Hi Martin!" target="_blank">hi@martintotev.com</a> 📭 </p>
             </div>
-                <form class="my-cv" id="cv-btn" action="./assets/cv/TOTEV-Martin_CV-digital.pdf">
+                <form class="my-cv" id="cv-btn" action="../assets/cv/TOTEV-Martin_CV-digital.pdf">
                     <input class="btn" type="submit" value="My CV" />
                 </form>
         </section>
 
-        <section>
+        <section id="portfolio">
             <div class="title">
-                <h2>Work at AUTOCRYPT</h2>
+                <h2>Professional Work</h2>
             </div>
-            <div class="sub-title">
-                <h3>Fleet Management System UX & UI Design</h3>
+        
+            <button type="button" class="collapsible">AutoCrypt V2X SCMS</button>
+            <div class="content">
+                <p>This project was a central security management centre for "vehicle-to-everything (V2X)" communications for a large national highway operator in South Korea. The communications between a vehicle and its surroundings is secured, like the current internet is currently secured, with Security Certificates and the IoT division of Penta Security (now a spin-off company called AUTOCRYPT) is working with public enterprise on securing all current and future Cooperative-Intelligent Transport Systems (C-ITS) in Korea. And with increasing numbers of connected infrastructure there was a need to design a comfortable user experience.</p>
             </div>
-            <div id="explore-list">
-                <ul id="list01">
-                    <li>
-                        <p>Text about the project and my involvement, my thoughts behind the design.</p>
-                    </li>
-                </ul>
+
+            <button type="button" class="collapsible">D'Amo KMS</button>
+            <div class="content">
+                <p><a href="https://www.pentasecurity.com/product/cold-wallet/" target="_blank">D'AMO KMS Hot Wallet</a> and <a href="https://www.pentasecurity.com/product/hot-wallet/" target="_blank">D'AMO KMS Cold Wallet</a> previously named "PALLET Z" is a digital asset storage solution for enterprises and as a “digital safe” it is composed of a variety of interfaces designed to prevent theft of the assets in storage. Online wallets are prone to vulnerabilities and attacks from parties interested in the assets stored inside. One of the biggest problem is that a wallet is connected to the internet and by just simply disconnecting it, the whole problem with cyber attacks is gone. But (there is always a but) what if someone has physical access? This is where the PALLET Z digital asset storage solution come to protect.</p>
+            </div>
+
+            <button type="button" class="collapsible">Project ECO</button>
+            <div class="content">
+                <p><a href="..." target="_blank">Link</a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">Project Signal</button>
+            <div class="content">
+                <p><a href="..." target="_blank">Link</a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">City Tractor Tool</button>
+            <div class="content">
+                <p><a href="..." target="_blank">Link</a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </section>
 
@@ -109,6 +124,20 @@
 
     <!-- Other scripts go here (and hopefully work... pretty please...) -->
     <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
     </script>
 </body>
 </html>
