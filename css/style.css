@@ -265,11 +265,11 @@ section:last-of-type {
     justify-content: center;
     align-content: center;
     grid-template-columns: 49% 2% 49%;
-    grid-template-rows: auto auto 20%;
+    grid-template-rows: auto auto;
     grid-template-areas:
         "title title title"
-        "penta ... codeand"
-        "... portfolio-btn ...";
+        "penta ... codeand";
+        /* "... portfolio-btn ..."; */
     z-index: 15;
 }
 
@@ -307,6 +307,79 @@ section:last-of-type {
 }
 */
 
+/* portfolio */
+#portfolio {
+    /* grid container */
+    position: relative;
+    /* display: grid; */
+    z-index: 11;
+    pointer-events: auto;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    /* grid-template-areas:
+        "title"
+        "collapsible"; */
+}
+
+.collapsible {
+    background-color: rgb(252, 252, 252);
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    border-color: rgb(252, 252, 252);
+    color: var(--text-colour);
+    cursor: pointer;
+    padding: 1.5em;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+
+}
+
+.collapsible:hover {
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    background-color: rgb(236, 236, 236);
+    border-color: var(--border-colour);
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: .75em;
+    font-weight: 100;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active {
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    background-color: rgb(245, 245, 245);
+    border-color: var(--border-colour);
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.content {
+    padding: 1.5em;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(245, 245, 245);
+    transition: max-height 0.2s ease-out;
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    border-color: var(--border-colour);
+}
+
+.content p {
+    margin: 0 !important;
+    line-height: 1.6em !important;
+}
 
 
 /* Improve and Explore section */

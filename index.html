@@ -15,6 +15,7 @@
 
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +30,7 @@
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/favicon/apple-icon-72x72.png">   
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/favicon/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/favicon/apple-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/favicon/apple-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/favicon/apple-icon-120x120.png">
@@ -44,7 +45,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/icons/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
- 
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/tipso.css">
     <link rel="stylesheet" href="./css/animate.css">
@@ -58,12 +59,15 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103132767-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
-        
+
         gtag('config', 'UA-103132767-1');
     </script>
-   
+
 
     <!-- Scripts -->
     <script src="./js/jquery.min.js"></script>
@@ -76,20 +80,19 @@
     -->
     <script src="./js/tipso.js"></script>
     <script>
-
-		jQuery(document).ready(function(){
-			// Position Tipso
-			jQuery('.top, .destroy, .update, .update-tipso-content').tipso({
-				position: 'top',
+        jQuery(document).ready(function () {
+            // Position Tipso
+            jQuery('.top, .destroy, .update, .update-tipso-content').tipso({
+                position: 'top',
                 borderWidth: '0 0 0 3px',
                 borderStyle: 'solid',
                 background: '#ffd563',
                 color: '#0f1928',
-				useTitle: false,
+                useTitle: false,
                 size: 'small',
                 speed: 100,
-			});
-		});
+            });
+        });
     </script>
     <!-- End of Tipso -->
 
@@ -102,12 +105,19 @@
         <section id="introduction">
             <h1 class="name">Martin Totev</h1>
             <div class="portrait"><img src="" alt=""></div>
-            <p class="tag"><span class="top tipso_style" data-tipso="This is based on your browser's current time!" id="greet">Hello!</span> and <span class="top tipso_style" data-tipso="This is based on your browser's default language!" id="langLocal">hi!</span> 👋<br> I am a UX designer and web developer but not yet a full unicorn 🦄.</p> <!-- greet and langLocal is localized to show greetings per browser's current time and default language -->
+            <p class="tag"><span class="top tipso_style" data-tipso="This is based on your browser's current time!"
+                    id="greet">Hello!</span> and <span class="top tipso_style"
+                    data-tipso="This is based on your browser's default language!" id="langLocal">hi!</span> 👋<br> I am
+                a UX designer and web developer but not yet a full unicorn 🦄.</p>
+            <!-- greet and langLocal is localized to show greetings per browser's current time and default language -->
             <div class="bio">
-                <p>Currently living in Seoul, South Korea I work at <a href="https://www.autocrypt.io">AUTOCRYPT</a> creating connections with partners, looking for creative ways to expand the business and help in the design of new products, for a more secure mobility.</p>
+                <p>Currently living in Seoul, South Korea I work at <a href="https://www.autocrypt.io">AUTOCRYPT</a>
+                    creating connections with partners, looking for creative ways to expand the business and help in the
+                    design of new products, for a more secure mobility.</p>
             </div>
             <div class="email">
-                <p>My mailbox is always open: <a href="mailto: hi@martintotev.com?subject=Hi Martin!" target="_blank">hi@martintotev.com</a> 📭 </p>
+                <p>My mailbox is always open: <a href="mailto: hi@martintotev.com?subject=Hi Martin!"
+                        target="_blank">hi@martintotev.com</a> 📭 </p>
             </div>
             <div class="my-cv">
                 <form id="cv-btn" action="./assets/cv/TOTEV-Martin_CV-digital.pdf">
@@ -118,21 +128,80 @@
 
         <section id="work">
             <div class="title">
-                <h2>Work</h2> <!-- Every time I write the word "work" Rhianna's song pops in my head... pentasecurity.com/product/hot-wallet/ -->
+                <h2>Work</h2>
+                <!-- Every time I write the word "work" Rhianna's song pops in my head... pentasecurity.com/product/hot-wallet/ -->
             </div>
             <div id="penta">
-                <p>I was a part of the <a href="https://www.pentasecurity.com/">Penta Security</a> Design team where I helped improve the user experience of the D'Amo KMS <a href="https://www.pentasecurity.com/product/hot-wallet/">Hot</a> and <a href="https://www.pentasecurity.com/product/cold-wallet/">Cold</a> Wallets (formerly branded as PALLET) line of enterprise crypto-currency storage solutions and the <a href="https://www.amo.foundation/">AMO Platform</a>.</p>
+                <p>I was a part of the <a href="https://www.pentasecurity.com/">Penta Security</a> Design team where I
+                    helped improve the user experience of the D'Amo KMS <a
+                        href="https://www.pentasecurity.com/product/hot-wallet/">Hot</a> and <a
+                        href="https://www.pentasecurity.com/product/cold-wallet/">Cold</a> Wallets (formerly branded as
+                    PALLET) line of enterprise crypto-currency storage solutions and the <a
+                        href="https://www.amo.foundation/">AMO Platform</a>.</p>
             </div>
             <div id="codeand">
-                <p>Before that I designed the services, attractions and customer experience of an ecology themed park and resort <s>stuck in what is known in the media industry as "<a href="https://en.wikipedia.org/wiki/Development_hell">development hell</a>" but after a number of hurdles along the way,</s> <a href="http://kko.to/O56KaXgDH">now under construction</a> and set to open in 2023.</p>
+                <p>Before that I designed the services, attractions and customer experience of an ecology themed park
+                    and resort <s>stuck in what is known in the media industry as "<a
+                            href="https://en.wikipedia.org/wiki/Development_hell">development hell</a>" but after a
+                        number of hurdles along the way,</s> <a href="http://kko.to/O56KaXgDH">now under
+                        construction</a> and set to open in 2023.</p>
             </div>
-            
-                <form id="portfolio-btn" action="./portfolio/portfolio.html">
-                    <input class="btn" type="submit" value="My Portfolio" />
-                </form>
-            
+            <!-- <form id="portfolio-btn" action="./portfolio/portfolio.html">
+                <input class="btn" type="submit" value="My Portfolio">
+            </form> -->
         </section>
-        
+
+        <section id="portfolio">
+            <div class="title">
+                <h2>Portfolio</h2>
+            </div>
+
+            <button type="button" class="collapsible">AutoCrypt V2X SCMS</button>
+            <div class="content">
+                <p>This project was a central security management centre for "vehicle-to-everything (V2X)"
+                    communications for a large national highway operator in South Korea. The communications between a
+                    vehicle and its surroundings is secured, like the current internet is currently secured, with
+                    Security Certificates and the IoT division of Penta Security (now a spin-off company called
+                    AUTOCRYPT) is working with public enterprise on securing all current and future
+                    Cooperative-Intelligent Transport Systems (C-ITS) in Korea. And with increasing numbers of connected
+                    infrastructure there was a need to design a comfortable user experience.</p>
+            </div>
+
+            <button type="button" class="collapsible">D'Amo KMS</button>
+            <div class="content">
+                <p><a href="https://www.pentasecurity.com/product/cold-wallet/" target="_blank">D'AMO KMS Hot Wallet</a>
+                    and <a href="https://www.pentasecurity.com/product/hot-wallet/" target="_blank">D'AMO KMS Cold
+                        Wallet</a> previously named "PALLET Z" is a digital asset storage solution for enterprises and
+                    as a “digital safe” it is composed of a variety of interfaces designed to prevent theft of the
+                    assets in storage. Online wallets are prone to vulnerabilities and attacks from parties interested
+                    in the assets stored inside. One of the biggest problem is that a wallet is connected to the
+                    internet and by just simply disconnecting it, the whole problem with cyber attacks is gone. But
+                    (there is always a but) what if someone has physical access? This is where the PALLET Z digital
+                    asset storage solution come to protect.</p>
+            </div>
+
+            <button type="button" class="collapsible">Project ECO (Under construction)</button>
+            <div class="content">
+                <p><a href="..." target="_blank">Link</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">Project Signal (Under construction)</button>
+            <div class="content">
+                <p><a href="..." target="_blank">Link</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">City Tractor Tool (Under construction)</button>
+            <div class="content">
+                <p><a href="..." target="_blank">Link</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
+
         <section id="explore">
             <div class="title">
                 <h2>Upgrade</h2>
@@ -172,22 +241,28 @@
             <div class="connect-list">
                 <div class="social-component" id="github">
                     <h5><a href="https://github.com/martintotev"><i class="fab fa-github fa-1x"></i> GitHub</a></h5>
-                    <p>One step closer to safely say I am a Unicorn designer. I might have a few "private" projects that are not ready for the light of day. I am working on them slowly due to limited knowledge on the topic, but they will be published one day</p>
+                    <p>One step closer to safely say I am a Unicorn designer. I might have a few "private" projects that
+                        are not ready for the light of day. I am working on them slowly due to limited knowledge on the
+                        topic, but they will be published one day</p>
                 </div>
                 <div class="social-component" id="twitter">
-                    <h5><a href="https://twitter.com/_martintotev"><i class="fab fa-twitter fa-1x"></i> Twitter</a> </h5>
+                    <h5><a href="https://twitter.com/_martintotev"><i class="fab fa-twitter fa-1x"></i> Twitter</a>
+                    </h5>
                     <p>I tweet about design, web development but most of all about the Korean Baseball Organisation.
-                    <br><b>WARNING!</b> My tweets could include a few cursive words in topics that anger me, <u>viewer discretion advised.</u></p>
+                        <br><b>WARNING!</b> My tweets could include a few cursive words in topics that anger me,
+                        <u>viewer discretion advised.</u></p>
                 </div>
                 <div class="social-component" id="instagram">
-                    <h5><a href="https://www.instagram.com/_martintotev/"><i class="fab fa-instagram fa-1x"></i> Instagram</a></h5>
-                    <p>I roam the streets of Seoul and photograph aspects of the city that I find charming or worthy of transferring the moment to 1s and 0s on a memory card.</p>
+                    <h5><a href="https://www.instagram.com/_martintotev/"><i class="fab fa-instagram fa-1x"></i>
+                            Instagram</a></h5>
+                    <p>I roam the streets of Seoul and photograph aspects of the city that I find charming or worthy of
+                        transferring the moment to 1s and 0s on a memory card.</p>
                 </div>
                 <!-- <div class="social-component" id="twitch">
                     <h5><a href="https://www.twitch.tv/martintotev"><i class="fab fa-twitch fa-1x"></i> Twitch</a></h5>
                     <p>You can find me streaming coding/learning how to code, or playing something I wanted to play for a long time on my PS4 or taking care of my Stardew Valley farm.</p>
                 </div> -->
-                </div>
+            </div>
             </div>
         </section>
 
@@ -196,8 +271,10 @@
                 <h2>Blog</h2>
             </div>
             <div class="post">
-                <h3><a href="https://blog.martintotev.com/">What I don't talk about when I talk about running...</a></h3>
-                <p>My blog is under construction so it is in a very unfinished state. I am learning Gatsby and am using a template for it so there is a lot to be tweaked. YOU HAVE BEEN WARNED! 🧙‍♂️ </p>
+                <h3><a href="https://blog.martintotev.com/">What I don't talk about when I talk about running...</a>
+                </h3>
+                <p>My blog is under construction so it is in a very unfinished state. I am learning Gatsby and am using
+                    a template for it so there is a lot to be tweaked. YOU HAVE BEEN WARNED! 🧙‍♂️ </p>
             </div>
             <!-- <div class="post">
                 <h3><a href="..."?>Another post</a></h3>
@@ -210,7 +287,11 @@
                 <h2>UI Kit</h2>
             </div>
             <div class="post" id="description">
-                <p>A Google Material Design based UI Kit, with “icons”, “buttons” and “toast”. So much “toast” you could feed a country! Symbols within symbols within symbols for easy-to-use overrides. If you want to know more about this design I did a few years ago, check <a href="https://medium.com/free-code-camp/seoul-bike-case-study-6ac4172f7188">this Medium post</a> and any feedback would be much appreciated!</p>
+                <p>A Google Material Design based UI Kit, with “icons”, “buttons” and “toast”. So much “toast” you could
+                    feed a country! Symbols within symbols within symbols for easy-to-use overrides. If you want to know
+                    more about this design I did a few years ago, check <a
+                        href="https://medium.com/free-code-camp/seoul-bike-case-study-6ac4172f7188">this Medium post</a>
+                    and any feedback would be much appreciated!</p>
             </div>
             <form id="uikit-btn" action="./ui-kit/uikit.html">
                 <input class="btn" type="submit" value="Free Sketch UI Kit" />
@@ -218,9 +299,12 @@
         </section>
 
         <footer id="footer">
-            <p id="copyright">© 2021 <a href="mailto: hi@martintotev.com?subject=Hi!" target="_blank">Martin Totev</a></p>
-            <p id="footer-text"><i>Disclaimer: This website and blog is the place where I train my front-end skills and is bound to change often.</i>
-                <br>I am looking for new UX challenges and am open for offers. Click on my name above this text to connect.</p>
+            <p id="copyright">© 2021 <a href="mailto: hi@martintotev.com?subject=Hi!" target="_blank">Martin Totev</a>
+            </p>
+            <p id="footer-text"><i>Disclaimer: This website and blog is the place where I train my front-end skills and
+                    is bound to change often.</i>
+                <br>I am looking for new UX challenges and am open for offers. Click on my name above this text to
+                connect.</p>
             <p id="button-top">
                 <a href="#" name="top" title="Back to top">Back to top ↑</a>
             </p>
@@ -230,6 +314,21 @@
 
     <!-- Other scripts go here (and hopefully work... pretty please...) -->
     <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
     </script>
 </body>
+
 </html>
