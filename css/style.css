@@ -1,11 +1,19 @@
 /* Developed by Martin Totev - 2020 */
 
-/* Colours:
-colour: #fdfdfc;
-colour: #ffd563;
-colour: #f8b500;
-colour: #00adb5;
-colour: #0f1928;
+/* Light colours:
+background pure white colour: #ffffff;
+background colour: #fdfdfc;
+border colour: #ffd563;
+link hover colour: #f8b500;
+link colour: #00adb5;
+text colour: #0f1928;
+*/
+
+/* Dark colours
+background colour: #191919;
+contrasting colour: #292929;
+text colour: #f8f8f8;
+
 */
 
 *,
@@ -19,12 +27,9 @@ colour: #0f1928;
 
 html,
 body {
-    --text-colour: #0f1928;
-    --background-colour-white: #ffffff;
-    --background-colour: #fdfdfc;
-    --link-colour: #00adb5;
-    --link-hover-colour: #f8b500;
-    --border-colour: #ffd563;
+    color: var(--text-colour);
+    background: var(--background-colour);
+
     font-family: 'Ubuntu', monospace;
     font-weight: 300;
     letter-spacing: -0.2px;
@@ -32,10 +37,28 @@ body {
     line-height: 1.5em;
     /* color: #3a3a3a; */
     color: var(--text-colour);
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, var(--background-colour-white) 0%, var(--background-colour) 90%);
+    /* background-color: transparent; */
+    /* background-image: linear-gradient(to bottom, var(--background-colour-white) 0%, var(--background-colour) 90%); */
     -moz-osx-font-smoothing: grayscale;
     transition: all .25s;
+}
+
+body.dark-theme {
+    --text-colour: #f8f8f8;
+    --background-colour: #191919;
+    --contrast-colour: #292929;
+}
+
+body{
+    --text-colour: #0f1928;
+    --pure-white: #fff;
+    --pure-black: #000;
+    --background-colour: #fdfdfc;
+    --link-colour: #00adb5;
+    --link-hover-colour: #f8b500;
+    --border-colour: #ffd563;
+    --grey-shade-01: #ececec;
+    --grey-shade-02: #f5f5f5;
 }
 
 h1,
@@ -110,14 +133,14 @@ a:focus {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    border-bottom: 1px dotted var(--pure-black); /* If you want dots under the hoverable text */
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
-    color: #fff;
+    background-color: var(--pure-black);
+    color: var(--pure-white);
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
@@ -144,7 +167,7 @@ main {
 }
 
 section {
-    /*background-color: #fff;*/
+    /* background-color: var(--pure-white); */
     margin: 5em 0 0em 0;
 }
 
@@ -152,20 +175,32 @@ section:last-of-type {
     margin-bottom: 0em;
 }
 
-.btn {
+.btn, #btn-toggle {
     padding: 0.5em 1.2em 0.5em 1.2em;
-    background-color: #ffffff;
+    background-color: var(--pure-white);
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
     border-width: 1px;
     border-style: solid;
-    border-color: #000000;
+    border-color: var(--pure-black);
     cursor: pointer;
-    color: #000000;
+    color: var(--pure-black);
     margin: auto !important;
     font-family: 'Ubuntu', monospace;
     font-weight: 300;
     letter-spacing: -0.2px;
     font-size: 1em;
+}
+
+#btn-toggle {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+    border-color: var(--grey-shade-01);
 }
 
 .btn:hover, .btn:focus, .btn:active {
@@ -324,10 +359,10 @@ section:last-of-type {
 }
 
 .collapsible {
-    background-color: rgb(252, 252, 252);
+    background-color: var(--background-colour);
     border-width: 0 0 0 3px;
     border-style: solid;
-    border-color: rgb(252, 252, 252);
+    border-color: var(--background-colour);
     color: var(--text-colour);
     cursor: pointer;
     padding: 1.5em;
@@ -341,7 +376,7 @@ section:last-of-type {
 .collapsible:hover {
     border-width: 0 0 0 3px;
     border-style: solid;
-    background-color: rgb(236, 236, 236);
+    background-color: var(--grey-shade-01);
     border-color: var(--border-colour);
 }
 
@@ -349,7 +384,7 @@ section:last-of-type {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: .75em;
     font-weight: 100;
-    color: white;
+    color: var(--pure-white);
     float: right;
     margin-left: 5px;
 }
@@ -358,7 +393,7 @@ section:last-of-type {
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
     border-width: 0 0 0 3px;
     border-style: solid;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--grey-shade-02);
     border-color: var(--border-colour);
 }
   
@@ -370,7 +405,7 @@ section:last-of-type {
     padding: 1.5em;
     display: none;
     overflow: hidden;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--grey-shade-02);
     transition: max-height 0.2s ease-out;
     border-width: 0 0 0 3px;
     border-style: solid;

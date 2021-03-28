@@ -74,6 +74,7 @@
     <script src="./js/hello-there.js" type="text/javascript"></script>
     <script src="./js/lang-localise.js" type="text/javascript"></script>
 
+
     <!--
         Tipso code starts here
         A lightweight jQuery tooltip plugin by Bojan Petkovsi. Find the source code here: https://github.com/object505/tipso
@@ -102,17 +103,23 @@
 
 <body>
     <main>
+        <button class="btn-toggle" id="btn-toggle"><i class="fas fa-moon"></i></button>
         <section id="introduction">
             <h1 class="name">Martin Totev</h1>
             <div class="portrait"><img src="" alt=""></div>
-            <p class="tag"><span class="top tipso_style" data-tipso="This is based on your browser's current time!" id="greet">Hello!</span> and <span class="top tipso_style" data-tipso="This is based on your browser's default language!" id="langLocal">hi!</span> 👋<br> I am
+            <p class="tag"><span class="top tipso_style" data-tipso="This is based on your browser's current time!"
+                    id="greet">Hello!</span> and <span class="top tipso_style"
+                    data-tipso="This is based on your browser's default language!" id="langLocal">hi!</span> 👋<br> I am
                 a UX designer and web developer but not yet a full unicorn 🦄.</p>
             <!-- greet and langLocal is localized to show greetings per browser's current time and default language -->
             <div class="bio">
-                <p>Currently living in Seoul, South Korea I work at <a href="https://www.autocrypt.io">AUTOCRYPT</a> creating connections with partners, looking for creative ways to expand the business and help in the design of new products, for a more secure mobility.</p>
+                <p>Currently living in Seoul, South Korea I work at <a href="https://www.autocrypt.io">AUTOCRYPT</a>
+                    creating connections with partners, looking for creative ways to expand the business and help in the
+                    design of new products, for a more secure mobility.</p>
             </div>
             <div class="email">
-                <p>My mailbox is always open: <a href="mailto: hi@martintotev.com?subject=Hi Martin!" target="_blank" rel="noopener">hi@martintotev.com</a> 📭 </p>
+                <p>My mailbox is always open: <a href="mailto: hi@martintotev.com?subject=Hi Martin!" target="_blank"
+                        rel="noopener">hi@martintotev.com</a> 📭 </p>
             </div>
             <div class="my-cv">
                 <form id="cv-btn" action="./assets/cv/TOTEV-Martin_CV-digital.pdf">
@@ -154,10 +161,18 @@
             <button type="button" class="collapsible">AutoCrypt V2X SCMS (Under construction)</button>
             <div class="content">
                 <p><b>Project overview:</b></p>
-                <p>This project was a central security management centre for "vehicle-to-everything (V2X)" communications for a large national highway operator in South Korea. The communications between a vehicle and its surroundings is secured, like the current internet is currently secured, with Security Certificates and the IoT division of Penta Security (now a spin-off company called AUTOCRYPT) is working with public enterprise on securing all current and future Cooperative-Intelligent Transport Systems (C-ITS) in Korea. And with increasing numbers of connected infrastructure there was a need to design a comfortable user experience.</p>
+                <p>This project was a central security management centre for "vehicle-to-everything (V2X)"
+                    communications for a large national highway operator in South Korea. The communications between a
+                    vehicle and its surroundings is secured, like the current internet is currently secured, with
+                    Security Certificates and the IoT division of Penta Security (now a spin-off company called
+                    AUTOCRYPT) is working with public enterprise on securing all current and future
+                    Cooperative-Intelligent Transport Systems (C-ITS) in Korea. And with increasing numbers of connected
+                    infrastructure there was a need to design a comfortable user experience.</p>
                 <br>
                 <p><b>What I learned:</b></p>
-                <p>Designing for a specific type of a user could be a very easy job, but when it comes to designing for any kind of back-end or management system is a challenge that every designer should experience. One reason I... </p>
+                <p>Designing for a specific type of a user could be a very easy job, but when it comes to designing for
+                    any kind of back-end or management system is a challenge that every designer should experience. One
+                    reason I... </p>
                 <br>
                 <p><i>A few images in a slide show should be somewhere here</i></p>
                 <p><b>TO BE CONTINUED...</b></p>
@@ -166,7 +181,15 @@
 
             <button type="button" class="collapsible">D'Amo KMS (Under construction)</button>
             <div class="content">
-                <p><a href="https://www.pentasecurity.com/product/cold-wallet/" target="_blank" rel="noopener">D'AMO KMS Hot Wallet</a> and <a href="https://www.pentasecurity.com/product/hot-wallet/" target="_blank" rel="noopener">D'AMO KMS Cold Wallet</a> previously named "PALLET Z" is a digital asset storage solution for enterprises and as a “digital safe” it is composed of a variety of interfaces designed to prevent theft of the assets in storage. Online wallets are prone to vulnerabilities and attacks from parties interested in the assets stored inside. One of the biggest problem is that a wallet is connected to the internet and by just simply disconnecting it, the whole problem with cyber attacks is gone. But (there is always a but) what if someone has physical access? This is where the PALLET Z digital asset storage solution come to protect.</p>
+                <p><a href="https://www.pentasecurity.com/product/cold-wallet/" target="_blank" rel="noopener">D'AMO KMS
+                        Hot Wallet</a> and <a href="https://www.pentasecurity.com/product/hot-wallet/" target="_blank"
+                        rel="noopener">D'AMO KMS Cold Wallet</a> previously named "PALLET Z" is a digital asset storage
+                    solution for enterprises and as a “digital safe” it is composed of a variety of interfaces designed
+                    to prevent theft of the assets in storage. Online wallets are prone to vulnerabilities and attacks
+                    from parties interested in the assets stored inside. One of the biggest problem is that a wallet is
+                    connected to the internet and by just simply disconnecting it, the whole problem with cyber attacks
+                    is gone. But (there is always a but) what if someone has physical access? This is where the PALLET Z
+                    digital asset storage solution come to protect.</p>
             </div>
 
             <button type="button" class="collapsible">Project ECO (Under construction)</button>
@@ -282,7 +305,10 @@
         </section>
 
         <footer id="footer">
-            <p id="copyright">© 2021 <a href="mailto: hi@martintotev.com?subject=Hi!" target="_blank" rel="noopener">Martin Totev</a>. Made with <i class="fab fa-html5"></i>, <i class="fab fa-css3-alt"></i>, a bit of <i class="fab fa-js"></i> and lots of <i class="fas fa-heart"></i>. 
+            <p id="copyright">© 2021 <a href="mailto: hi@martintotev.com?subject=Hi!" target="_blank"
+                    rel="noopener">Martin Totev</a>. Made with <i class="fab fa-html5"></i>, <i
+                    class="fab fa-css3-alt"></i>, a bit of <i class="fab fa-js"></i> and lots of <i
+                    class="fas fa-heart"></i>.
             </p>
             <p id="footer-text"><i>Disclaimer: This website and blog is the place where I train my front-end skills and
                     is bound to change often.</i>
@@ -310,6 +336,42 @@
                     content.style.display = "block";
                 }
             });
+        }
+    </script>
+
+    <!-- Dark mode script -->
+    <script>
+        // Select the button
+        const btn = document.querySelector(".btn-toggle");
+
+        // Listen for a click on the button
+        btn.addEventListener("click", function () {
+            // Then toggle (add/remove) the .dark-theme class to the body
+            document.body.classList.toggle("dark-theme");
+        });
+    </script>
+
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("btn-toggle");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
 </body>
