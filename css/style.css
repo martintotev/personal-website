@@ -232,6 +232,26 @@ section:last-of-type {
     border-color: var(--border-colour);
 }
 
+.title-text {
+    display: block;
+    font-family: 'Abril Fatface', serif;
+    font-weight: 400;
+    /* letter-spacing: 0.02em; */
+    line-height: 1em !important;
+    margin: 0;
+    padding: 0;
+    color: var(--name-colour);
+    line-height: 1.5em;
+    text-align: left;
+    z-index: 10;
+    text-shadow:
+        -1px 0 var(--border-colour),
+        0 1px var(--border-colour),
+        1px 0 var(--border-colour),
+        0 -1px var(--border-colour)
+    ;
+}
+
 
 
 /* intro section */
@@ -267,7 +287,12 @@ section:last-of-type {
     text-align: left;
     z-index: 10;
     font-size: 6em;
-    text-shadow: -1px 0 var(--border-colour), 0 1px var(--border-colour), 1px 0 var(--border-colour), 0 -1px var(--border-colour);
+    text-shadow:
+        -1px 0 var(--border-colour),
+        0 1px var(--border-colour),
+        1px 0 var(--border-colour),
+        0 -1px var(--border-colour)
+    ;
 }
 
 #introduction .portrait {
