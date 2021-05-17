@@ -45,13 +45,21 @@ body {
 
 body.dark-theme {
     --text-colour: #f8f8f8;
+    --name-colour: #252525;
+    --btn-colour: #000;
     --background-colour: #191919;
     --contrast-colour: #292929;
+    --link-colour: #1d848a;
+    --link-hover-colour: #c59100;
+    --border-colour: #e4b228;
+    --grey-shade-01: #1f1f1f;
+    --grey-shade-02: #252525;
 }
 
 body{
     --text-colour: #0f1928;
-    --pure-white: #fff;
+    --name-colour: #0f1928;
+    --btn-colour: #fff;
     --pure-black: #000;
     --background-colour: #fdfdfc;
     --link-colour: #00adb5;
@@ -177,13 +185,13 @@ section:last-of-type {
 
 .btn, #btn-toggle {
     padding: 0.5em 1.2em 0.5em 1.2em;
-    background-color: var(--pure-white);
+    background-color: var(--background-colour);
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
     border-width: 1px;
     border-style: solid;
-    border-color: var(--pure-black);
+    border-color: var(--text-colour);
     cursor: pointer;
-    color: var(--pure-black);
+    color: var(--text-colour);
     margin: auto !important;
     font-family: 'Ubuntu', monospace;
     font-weight: 300;
@@ -204,8 +212,8 @@ section:last-of-type {
 }
 
 .btn:hover, .btn:focus, .btn:active {
-    color: var(--border-colour);
-    background-color: var(--text-colour);
+    color: var(--link-colour);
+    background-color: var(--background-colour);
     border-color: var(--border-colour);
 }
   
@@ -247,6 +255,19 @@ section:last-of-type {
 
 #introduction .name {
     grid-area: name;
+    display: block;
+    font-family: 'Abril Fatface', serif;
+    font-weight: 400;
+    /* letter-spacing: 0.02em; */
+    line-height: 1em !important;
+    margin: 0;
+    padding: 0;
+    color: var(--name-colour);
+    line-height: 1.5em;
+    text-align: left;
+    z-index: 10;
+    font-size: 6em;
+    text-shadow: -1px 0 var(--border-colour), 0 1px var(--border-colour), 1px 0 var(--border-colour), 0 -1px var(--border-colour);
 }
 
 #introduction .portrait {
