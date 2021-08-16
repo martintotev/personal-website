@@ -264,13 +264,23 @@ section:last-of-type {
     pointer-events: auto;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 60px 142px 100px auto;
+    grid-template-columns: 320px auto;
+    column-gap: 1em;
+    grid-template-rows: 15% auto;
     grid-template-areas:
-        "name name name name name"
-        "... ... tag tag tag"
-        "... ... bio bio bio"
-        "... ... email email my-cv";
+        "name name"
+        "portrait intro";
+}
+
+#introduction .intro {
+    grid-area: intro;
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "tag tag "
+        "bio bio"
+        "email my-cv";
 }
 
 #introduction .name {
@@ -278,7 +288,7 @@ section:last-of-type {
     display: block;
     font-family: 'Abril Fatface', serif;
     font-weight: 400;
-    /* letter-spacing: 0.02em; */
+    letter-spacing: -0.04em;
     line-height: 1em !important;
     margin: 0;
     padding: 0;
@@ -297,14 +307,14 @@ section:last-of-type {
 
 #introduction .portrait {
     display: block;
-    background-image: url(../assets/img/Profile-square-280.jpg);
+    background-image: url(../assets/img/Profile-square-410.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 1;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
     z-index: -1;
 }
 
@@ -606,24 +616,20 @@ section:last-of-type {
 
 /* responsive? maybe... */
 /* widest */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .morph-outline-lower {
         display: none;
     }
 
     #introduction .portrait {
-        width: 320px;
-        height: 320px;
-    }
-
-    #intro {
-        grid-template-rows: 40px 145px;
+        width: 120px;
+        height: 120px;
     }
 
     section {
         margin: 8em 0 0em 0;
     }
-}
+} */
 
 /* tablet */
 @media screen and (max-width: 992px) {
@@ -631,10 +637,18 @@ section:last-of-type {
         width: 80%;
     }
 
-    #intro .portrait {
-        width: 250px;
-        height: 25ç
-        0px;
+    #introduction {
+        grid-template-columns: 200px auto;
+        column-gap: 1em;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "name name"
+        "portrait intro";
+    }
+
+    #introduction .portrait {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -652,19 +666,22 @@ section:last-of-type {
         text-align: center;
     }
 
-    #intro {
-        grid-template-columns: 20% 20% 10% 45% 5%;
-        grid-template-rows: 70px 110px;
+    #introduction {
+        column-gap: 1em;
+        grid-template-rows: auto;
+        grid-template-columns: 120px auto;
         grid-template-areas:
-            "... ... ... tagline tagline"
-            "... ... name name name"
-            "... ... ... bio bio"
-            "... ... ... my-cv";
+        "name name"
+        "portrait intro";
     }
 
-    #intro .portrait {
-        width: 305px;
-        height: 305px;
+    #introduction .portrait {
+        width: 120px;
+        height: 120px;
+    }
+
+    #introduction .name {
+        font-size: 5em;
     }
 
     /*.projects div:last-child {
@@ -678,6 +695,15 @@ section:last-of-type {
     {
     section {
         margin: 1em 0 0 0;
+    }
+
+    #introduction {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "..."
+            "name"
+            "intro";
     }
 
     #footer {
@@ -717,6 +743,13 @@ section:last-of-type {
         grid-template-areas:
             "..."
             "name"
+            "intro";
+    }
+
+    #introduction .intro {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
             "tag"
             "bio"
             "email"
@@ -724,7 +757,7 @@ section:last-of-type {
     }
 
     #introduction .name {
-        text-align: center;
+        font-size: 5em;
     }
 
     #introduction .portrait {
