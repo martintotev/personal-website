@@ -275,12 +275,11 @@ section:last-of-type {
 #introduction .intro {
     grid-area: intro;
     display: grid;
-    grid-template-columns: 80% auto;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-        "tag tag "
-        "bio bio"
-        "email my-cv";
+        "tag"
+        "bio";
 }
 
 #introduction .name {
