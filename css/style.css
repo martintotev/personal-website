@@ -74,7 +74,7 @@ h2,
 h3,
 h4 {
     display: block;
-    font-family: 'Abril Fatface', serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
     /* letter-spacing: 0.02em; */
     line-height: 1em !important;
@@ -227,14 +227,14 @@ section:last-of-type {
     display: block;
     pointer-events: auto;
     width: 100%;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: var(--border-colour);
+    border-color: var(--border-colour); */
 }
 
 .title-text {
     display: block;
-    font-family: 'Abril Fatface', serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
     /* letter-spacing: 0.02em; */
     line-height: 1em !important;
@@ -285,8 +285,8 @@ section:last-of-type {
 #introduction .name {
     grid-area: name;
     display: block;
-    font-family: 'Abril Fatface', serif;
-    font-weight: 400;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
     letter-spacing: -0.04em;
     line-height: 1em !important;
     margin: 0;
