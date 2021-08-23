@@ -45,7 +45,7 @@ body {
 
 body.dark-theme {
     --text-colour: #f8f8f8;
-    --name-colour: #252525;
+    --name-colour: #3527D1;
     --btn-colour: #000;
     --background-colour: #191919;
     --contrast-colour: #292929;
@@ -58,13 +58,13 @@ body.dark-theme {
 
 body{
     --text-colour: #0f1928;
-    --name-colour: #0f1928;
+    --name-colour: #3527D1;
     --btn-colour: #fff;
     --pure-black: #000;
     --background-colour: #fdfdfc;
-    --link-colour: #00adb5;
-    --link-hover-colour: #f8b500;
-    --border-colour: #ffd563;
+    --link-colour: #0f1928;
+    --link-hover-colour: #3527D1;
+    --border-colour: #3527D1;
     --grey-shade-01: #ececec;
     --grey-shade-02: #f5f5f5;
 }
@@ -121,7 +121,7 @@ p {
 
 a,
 a:active {
-    text-decoration: none;
+    text-decoration: underline !important;
     -webkit-text-decoration-skip: ink;
     text-decoration-skip: ink;
     opacity: 1;
@@ -244,11 +244,11 @@ section:last-of-type {
     line-height: 1.5em;
     text-align: left;
     z-index: 10;
-    text-shadow:
+    /* text-shadow:
         -1px 0 var(--border-colour),
         0 1px var(--border-colour),
         1px 0 var(--border-colour),
-        0 -1px var(--border-colour)
+        0 -1px var(--border-colour) */
     ;
 }
 
@@ -264,12 +264,12 @@ section:last-of-type {
     pointer-events: auto;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 320px auto;
+    grid-template-columns: 1fr 2fr;
     column-gap: 1em;
-    grid-template-rows: 15% auto;
+    grid-template-rows: auto;
     grid-template-areas:
-        "name name"
-        "portrait intro";
+        "name intro";
+        /* "portrait intro" */
 }
 
 #introduction .intro {
@@ -296,11 +296,11 @@ section:last-of-type {
     text-align: left;
     z-index: 10;
     font-size: 6em;
-    text-shadow:
+    /* text-shadow:
         -1px 0 var(--border-colour),
         0 1px var(--border-colour),
         1px 0 var(--border-colour),
-        0 -1px var(--border-colour)
+        0 -1px var(--border-colour) */
     ;
 }
 
@@ -523,12 +523,11 @@ section:last-of-type {
     position: relative;
     display: grid;
     align-content: center;
-    grid-template-columns: auto;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
-    "github"
-    "twitter"
-    "instagram"
-    "twitch";
+    "blog github"
+    "twitter instagram";
+    column-gap: 3em;
 }
 
 #connect .social-component h5 {
