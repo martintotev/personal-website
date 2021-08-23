@@ -74,8 +74,8 @@ h2,
 h3,
 h4 {
     display: block;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'Italiana', serif;
     /* letter-spacing: 0.02em; */
     line-height: 1em !important;
     margin: 0;
@@ -234,7 +234,8 @@ section:last-of-type {
 
 .title-text {
     display: block;
-    font-family: 'Space Grotesk', sans-serif;
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'Italiana', serif;
     font-weight: 400;
     /* letter-spacing: 0.02em; */
     line-height: 1em !important;
@@ -285,7 +286,8 @@ section:last-of-type {
 #introduction .name {
     grid-area: name;
     display: block;
-    font-family: 'Space Grotesk', sans-serif;
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'Italiana', serif;
     font-weight: 300;
     letter-spacing: -0.04em;
     line-height: 1em !important;
@@ -636,12 +638,13 @@ section:last-of-type {
     }
 
     #introduction {
-        grid-template-columns: 200px auto;
+        grid-template-columns: 1fr 2fr;
         column-gap: 1em;
         grid-template-rows: auto;
         grid-template-areas:
-        "name name"
-        "portrait intro";
+        "name intro"
+        "name intro";
+        align-items: center;
     }
 
     #introduction .portrait {
