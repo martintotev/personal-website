@@ -360,13 +360,13 @@ section:last-of-type {
     grid-template-rows: auto auto;
     grid-template-areas:
         "title title title"
-        "penta ... codeand";
+        "autocrypt ... codeand";
         /* "... portfolio-btn ..."; */
     z-index: 15;
 }
 
-#work #penta {
-    grid-area: penta;
+#work #autocrypt {
+    grid-area: autocrypt;
 }
 
 #work #codeand {
